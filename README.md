@@ -1,39 +1,68 @@
-# Getting Started with Create React App and Redux
+# Kibya (Kitap Depo Yönetimi)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using
-the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Kibya, kitap depo yönetimini kolaylaştırmak için tasarlanmış bir web uygulamasıdır. Kullanıcılar, kitap ve raf bilgilerini yönetebilir, stok takibini yapabilir ve toplu veri girişi sayesinde işlemlerini hızlandırabilir. MERN Stack ile geliştirilmiş bu proje, modern bir arayüz ve güçlü bir backend ile kullanıcı dostu bir deneyim sunar.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Özellikler
+- **Kullanıcı Kimlik Doğrulaması (JWT)**: Güvenli giriş ve erişim kontrolü sağlar.
+- **Kitap Bilgisi CRUD Operasyonları**: Kitapları ekleyebilir, güncelleyebilir, görüntüleyebilir ve silebilirsiniz.
+- **Raf-Lokasyon Bilgisi CRUD Operasyonları**: Raf bilgilerini kolayca yönetebilirsiniz.
+- **Stok Operasyonları**: Kitapların depo stok durumlarını, raf-lokasyon bazlı takip edebilirsiniz.
+- **Toplu Veri Girişi**: Hızlı veri girişi için toplu yükleme imkanı sunar.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kurulum
+1. Bu repoyu klonlayın:
+   ```bash
+   git clone https://github.com/alikahraman/kibya.git
+   ```
+2. Proje 'backend' dizinine gidin:
+   ```bash
+   cd kibya/backend
+   ```
+3. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+4. Örnek bir `.env` dosyası oluşturun ve aşağıdaki gibi doldurun:
+   ```env
+   NODE_ENV=development
+   PORT=8000
+   MONGO_URI=mongodb+srv://kullanici:şifre@cluster0.mongodb.net/dbname
+   JWT_SECRET=sizin_secret_kelimeniz
+   ```
+5. Sunucuyu 8000 portunda başlatın:
+   ```bash
+   npm run dev
+   ```
+6. Proje 'frontend' dizinine gidin:
+   ```bash
+   cd kibya/frontend
+   ```
+7. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+8. Projeyi 3000 portunda başlatın:
+   ```bash
+   npm run dev
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kullanılan Teknolojiler
 
-### `npm test`
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [React](https://reactjs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Material UI](https://mui.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
-information.
+## Gelecek Planları
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in
-the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Kullanıcı rollerine göre erişim kontrolü
+- Detaylı raporlama ve istatistikler
+- Sipariş modülü ile tekli veya çoklu siparişi toplama
+- Mobil cihazlar için optimize edilmiş kullanıcı arayüzü
+- El Terminali için optimize edilmiş kullanıcı arayüzü
+- E-Ticaret sitesi entegrasyonu için XML altyapısı
