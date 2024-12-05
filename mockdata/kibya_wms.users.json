@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "675156de6e572bcf8c14031d"
+  },
+  "name": "Test Bey",
+  "email": "deneme@kibya.com",
+  "password": "$2a$10$q36owBo2DCH5QKcD7x7no.qYKGYCgIRz.yyBo2k/lZgSoTVYY.azu",
+  "createdAt": {
+    "$date": "2024-12-05T07:31:42.082Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-05T07:31:42.082Z"
+  },
+  "__v": 0
+}]
